@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <style>
+        .nav {
+            overflow: hidden;
+            background-color: #333;
+            width: 100%;
+        }
+
+
+        .nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a style="color:#fff;">InSource Shopping Mall</a>
+        <a href="insourceitshop.html">Home</a>
+
+    </div>
+    <div class="container">
+        <div class="col my-4">
+            <h2>Review Your Cart Items</h2>
+            <div id="paid" class='alert'></div>
+            <ul style="
+        padding-left: 0px;">
+                <li style="width: 100%;" class="list-group-item d-flex justify-content-between align-items-center">
+                    <p>Name</p>
+                    <p style="padding-left:8rem">Quantity</p>
+                    <p>Price</p>
+                    <p>Total Price</p>
+                </li>
+            </ul>
+            <div id="items">
+                <ul class="list-group">
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Sorry Your cart is Empty!Please Add Product to your Cart
+                    </li>
+
+                </ul>
+            </div>
+            <ul style="
+        padding-left: 0px;" id="total">
+
+            </ul>
+        </div>
+
+    </div>
+
+
+    <script>
+        function showcart() {
+
+            let items = localStorage.getItem('productsInCart');
+            let itemCost = localStorage.getItem('totalPrice');
+            items = JSON.parse(localStorage.getItem('productsInCart'));
+            let productContainer = document.getElementById('items');
+            let totalCosts = document.getElementById('total');
+
+            if (items && productContainer) {
+                productContainer.innerHTML = '';
+                totalCosts.innerHTML = '';
+                Object.values(items).map(item => {
+                    productContainer.innerHTML += `<li  class="list-group-item d-flex justify-content-between align-items-center">
+                   <p style="width:13rem">${item.name}</p> <span class="badge badge-primary badge-pill">${item.qty}</span>
+                   <p = class="badge badge-primary badge-pill">Rs ${item.price}</p>
+                   <p = class="badge badge-primary badge-pill">Rs ${item.price * item.qty}</p>
+                   </li>
+                   
+                   `
+
+
+
+
+
+                })
+                totalCosts.innerHTML += `<p class="list-group-item d-flex justify-content-between align-items-center" >Net Price:<span class="badge badge-primary badge-pill"> Rs ${itemCost}</span><a href="#" onclick="paid()" class="btn btn-primary">Proceed To Pay</a><a href="insourceitshop.html" onclick="clearCart()" class="btn btn-primary">Clear Cart</a></p>
+                   `
+
+
+            }
+
+        }
+        function clearCart() {
+
+            localStorage.clear();
+
+        }
+        function paid() {
+            let itemCost = localStorage.getItem('totalPrice');
+            let paid = document.getElementById('paid');
+
+            paid.innerHTML += `<div class="alert alert-primary" role="alert">
+
+<p class=" d-flex justify-content-between align-items-center" >Rs ${itemCost} Paid Successfully Thanks You</p>
+</div> `
+
+            clearCart()
+        }
+
+
+        showcart()
+    </script>
+
+</body>
+
+</html>

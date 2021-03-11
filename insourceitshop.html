@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+
+  <style>
+    .nav {
+      overflow: hidden;
+      background-color: #333;
+      width: 100%;
+    }
+
+
+    .nav a {
+      float: left;
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+
+
+    .card-img-top {
+      width: 100%;
+      height: 30vh;
+      padding: 2%;
+    }
+
+    .align-items-center {
+      margin-left: 0px;
+
+    }
+
+    @media screen and (max-width: 480px) {
+      .card-img-top {
+        width: 100%;
+        height: 60vh;
+        padding: 2%;
+      }
+
+      ;
+
+    }
+
+    .container {
+      margin-top: 60px;
+    }
+
+    .card {
+      margin: 2%;
+    }
+
+    .price {
+      color: #c0a16b;
+      font-family: "Arial Black";
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+  <div class="nav">
+    <a style="color:#fff;">InSource Shopping Mall</a>
+    <a href="#home">Home</a>
+
+  </div>
+
+
+
+
+  <div class="container">
+    <div id="alert">
+
+    </div>
+    <div class="row align-items-center">
+
+
+      <div class="card" style="width: 20rem;">
+        <img src="item2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" id="namepr1">Laptop</h5>
+          <p class="card-text"><span class="price">Price: </span>Rs 42000</p>
+
+          <button href="insourceitshop.html" class="btn btn-primary cart" onclick="alert()">Add to Cart</button>
+          <a href="checkout.html" class="btn btn-primary">Checkout</a>
+
+        </div>
+      </div>
+
+
+
+      <div class="card" style="width: 20rem;">
+        <img src="item3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Smart Watch</h5>
+          <p class="card-text"><span class="price">Price: </span>Rs 5500</p>
+
+          <button href="insourceitshop.html" class="btn btn-primary cart" onclick="alert()">Add to Cart</button>
+          <a href="checkout.html" class="btn btn-primary">Checkout</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 20rem;">
+        <img src="item1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ear Buds</h5>
+          <p class="card-text"><span class="price">Price: </span>Rs 4500</p>
+
+          <button href="insourceitshop.html" class="btn btn-primary cart" onclick="alert()">Add to Cart</button>
+          <a href="checkout.html" class="btn btn-primary">Checkout</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 20rem;">
+        <img src="item4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Video Games</h5>
+          <p class="card-text"><span class="price">Price: </span>Rs 25000</p>
+
+          <button href="insourceitshop.html" class="btn btn-primary cart" onclick="alert()">Add to Cart</button>
+          <a href="checkout.html" class="btn btn-primary">Checkout</a>
+        </div>
+      </div>
+
+
+
+      <div class="card" style="width: 20rem;">
+        <img src="item12.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">USB Hub</h5>
+          <p class="card-text"><span class="price">Price: </span>Rs 500</p>
+
+          <button href="insourceitshop.html" class="btn btn-primary cart" onclick="alert()">Add to Cart</button>
+          <a href="checkout.html" class="btn btn-primary">Checkout</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 20rem;">
+        <img src="item7.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mobile</h5>
+          <p class="card-text"><span class="price">Price: </span>Rs 15500</p>
+          <span id="dpr6" class="dpr">
+            <button href="insourceitshop.html" class="btn btn-primary cart" onclick="alert()">Add to Cart</button>
+            <a href="checkout.html" class="btn btn-primary">Checkout</a>
+
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <script>
+
+    let carts = document.querySelectorAll('.cart');
+    let products = [
+      {
+        name: 'Laptop',
+        price: 42000,
+        qty: 0
+      },
+      {
+        name: 'SmartWatch',
+        price: 5500,
+        qty: 0
+      },
+      {
+        name: 'EarBuds',
+        price: 4500,
+        qty: 0
+      },
+      {
+        name: 'Video Games',
+        price: 25000,
+        qty: 0
+      },
+      {
+        name: 'USB',
+        price: 500,
+        qty: 0
+      },
+      {
+        name: 'Mobile',
+        price: 15500,
+        qty: 0
+      },
+    ]
+
+
+    for (let i = 0; i < carts.length; i++) {
+
+      carts[i].addEventListener('click', () => {
+        cartCount(products[i])
+        totalCost(products[i])
+      })
+
+    }
+
+    function cartCount(products) {
+
+      let productNumber = localStorage.getItem('cartNumbers');
+      productNumber = parseInt(productNumber);
+      if (productNumber) {
+        localStorage.setItem('cartNumbers', productNumber + 1);
+      }
+      else {
+        localStorage.setItem('cartNumbers', 1);
+      }
+      setItems(products)
+    }
+    function setItems(products) {
+      let cartItems = localStorage.getItem('productsInCart');
+      cartItems = JSON.parse(cartItems)
+      if (cartItems != null) {
+        if (cartItems[products.name] == undefined) {
+          cartItems = {
+            ...cartItems,
+            [products.name]: products
+
+          }
+        }
+
+
+        cartItems[products.name].qty += 1;
+      }
+      else {
+        products.qty = 1;
+
+        cartItems = {
+          [products.name]: products
+        }
+      }
+
+
+      localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+    }
+
+    function totalCost(products) {
+
+      let itemCost = localStorage.getItem('totalPrice');
+
+      if (itemCost != null) {
+        if (itemCost == undefined) {
+          itemCost = {
+            ...itemCost,
+            itemCost: localStorage.setItem('totalPrice', products.price)
+          }
+        }
+        else {
+          itemCost = parseInt(itemCost);
+          localStorage.setItem('totalPrice', itemCost + products.price);
+        }
+      }
+      else {
+        localStorage.setItem('totalPrice', products.price);
+      }
+    }
+
+
+
+
+
+    function alert() {
+      $('.alert').alert('close')
+      let alerts = document.getElementById('alert');
+      alerts.innerHTML += `<div style="margin-top:2rem" class="alert alert-primary" role="alert">
+  Item Added to Cart
+</div>`
+      $('.alert').alert('fade')
+    }
+
+
+
+
+
+
+
+
+
+  </script>
+
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
