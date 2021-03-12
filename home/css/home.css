@@ -52,6 +52,14 @@
   }
   
 }
+@media only screen and (max-width: 350px) {
+  .container .card .mycard{
+    width: 100%;
+    left: 0 !important;
+    padding: 0;
+    margin: 0;
+}
+}
 .container .card .mycard.card1{
   position: relative;
   background: #333;
