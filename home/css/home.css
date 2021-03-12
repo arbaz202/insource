@@ -31,7 +31,7 @@
   height: 200px;
   transition: 0.5s;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   .container {
       margin: 15px 0;
       width: 100%;
@@ -46,18 +46,20 @@
       width: 100% !important;
       
       transition: 0.5s;
+      left: 20px;
+      right: 20px;
   } 
   .container .card .mycard{
-      left: 44px;
+      left: 5px;
+      
   }
   
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 360px) {
   .container .card .mycard{
-    width: 100%;
-    left: 0 !important;
-    padding: 0;
-    margin: 0;
+    width: 280px !important;
+    /* height: 230px; */
+    
 }
 }
 .container .card .mycard.card1{
