@@ -2,257 +2,257 @@
     max-width: 100% !important;
 } */
 .section{
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background: #333;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: poppins;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: poppins;
 }
 
 .container {
-    margin: 15px 0;
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-   
+  margin: 15px 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+ 
 }
 .container .card{
-    background: #333;
+  background: #333;
 
-    position: relative;
+  position: relative;
 }
 .container .card .mycard{
-    width: 300px;
-    height: 200px;
-    transition: 0.5s;
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
 }
 @media only screen and (max-width: 480px) {
-    .container {
-        margin: 15px 0;
-        width: 100%;
-        position: relative;
-        display: block;
-        justify-content: center;
-        align-items: center;
-       
-    }
-    .container .card {
-        display: flex;
-        width: 100% !important;
-        
-        transition: 0.5s;
-    } 
-    .container .card .mycard{
-        left: 44px;
-    }
-    
+  .container {
+      margin: 15px 0;
+      width: 100%;
+      position: relative;
+      display: block;
+      justify-content: center;
+      align-items: center;
+     
+  }
+  .container .card {
+      display: flex;
+      width: 100% !important;
+      
+      transition: 0.5s;
+  } 
+  .container .card .mycard{
+      left: 44px;
+  }
+  
 }
 .container .card .mycard.card1{
-    position: relative;
-    background: #333;
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-    transform: translateY(100px);
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  transform: translateY(100px);
 }
 .container .card:hover .mycard.card1{
-    background: #5DA3FA;
-    transform: translateY(0);
+  background: #5DA3FA;
+  transform: translateY(0);
 }
 .container .card .mycard.card1 .content{
-   opacity: 0.2;
-   transition: 0.5s;
- }
- .container .card .mycard.card1 .content img{
-    width: 100%;
-    height: 160px;
-  }
- .container .card:hover .mycard.card1 .content{
-    opacity: 1;
-    
-  }
-  .container .card .mycard.card1 .content h3{
-    margin: 10px 0,0;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    font-size: 1.5em;
-    
-  }
+ opacity: 0.2;
+ transition: 0.5s;
+}
+.container .card .mycard.card1 .content img{
+  width: 100%;
+  height: 160px;
+}
+.container .card:hover .mycard.card1 .content{
+  opacity: 1;
+  
+}
+.container .card .mycard.card1 .content h3{
+  margin: 10px 0,0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+  
+}
 .container .card .mycard.card2{
-    position: relative;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    box-shadow: 0 20px 50px rgba(0, 0, 0,0.8);
-    transform: translateY(-100px);
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0,0.8);
+  transform: translateY(-100px);
 
 }
 .container .card:hover .mycard.card2{
-    transform: translateY(0);
+  transform: translateY(0);
 }
 .container .card .mycard.card2 .content p{
-   margin: 0;
-   padding-bottom: 15px;
+ margin: 0;
+ padding-bottom: 15px;
 }
 .container .card .mycard.card2 .content a{
-    margin: 15px 0 0;
-    display: inline block;
-    text-decoration: none;
-    font-weight: 900;
-    color: #333;
-    padding: 5px;
-    border: 1px solid #333;
- }
- .container .card .mycard.card2 .content a:hover{
-    background: #333;
-    color: #fff;
- }
- .bg-01{
-    background: url(../images/pht11.jpg);
-    background: cover;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    max-width: 100vw;
-    max-height: auto;
-    opacity: 0.5;
+  margin: 15px 0 0;
+  display: inline block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
 }
- .bg-02{
-     background: url(../images/ph2.jpg);
-     background: cover;
-     background-repeat: no-repeat;
-     background-size: 100% 100%;
-     opacity: 0.6;
- }
- .bg-03{
-    background: url(../images/ph3.jpg);
-    background: cover;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    opacity: 0.5;
+.container .card .mycard.card2 .content a:hover{
+  background: #333;
+  color: #fff;
+}
+.bg-01{
+  background: url(../images/pht11.jpg);
+  background: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  max-width: 100vw;
+  max-height: auto;
+  opacity: 0.5;
+}
+.bg-02{
+   background: url(../images/ph2.jpg);
+   background: cover;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   opacity: 0.6;
+}
+.bg-03{
+  background: url(../images/ph3.jpg);
+  background: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.5;
 }
 .bg-overlay-black-50:before {
-    background: rgba(0,0,0,.5);
+  background: rgba(0,0,0,.5);
 }
 .process-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #161623;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #161623;
 }
 .process-section::before{
-    content: '';
-    position: absolute;
-    /* top: 1000px; */
-    left: 0em;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#f00,#f0f);
-    clip-path: circle(30% at right 70%);
-    
+  content: '';
+  position: absolute;
+  /* top: 1000px; */
+  left: 0em;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#f00,#f0f);
+  clip-path: circle(30% at right 70%);
+  
 }
 .process-section::after{
-    content: '';
-    position: absolute;
-    /* top: 0em; */
-    left: 0em;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#f00,#f0f);
-    clip-path: circle(20% at 10% 10%);
-    
+  content: '';
+  position: absolute;
+  /* top: 0em; */
+  left: 0em;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#f00,#f0f);
+  clip-path: circle(20% at 10% 10%);
+  
 }
 .process-section .container{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    flex-wrap: nowrap;
-    z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: nowrap;
+  z-index: 1;
 }
 .process-section .container .card {
 
-    position: relative;
-    width: 340px;
-    height: 480px;
-    margin: 20px;
-    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-    border-radius: 15px;
-    background: rgba(255,255,255,0.1);
-    
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 1 px solid rgba(255,255,255,0.5);
-    border-left: 1 px solid rgba(255,255,255,0.5);
-    backdrop-filter: blur(5px);
-    
+  position: relative;
+  width: 340px;
+  height: 480px;
+  margin: 20px;
+  box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+  border-radius: 15px;
+  background: rgba(255,255,255,0.1);
+  
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1 px solid rgba(255,255,255,0.5);
+  border-left: 1 px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(5px);
+  
 }
 @media only screen and (max-width: 480px){
-    .process-section{
-        display: block;
-        height: 100%;
-    }
-    .process-section .container {
-        width: 100%;
-        position: absolute;
-        display: block;
-    }
-    .process-section .container .card {
-        width: 80%;
-        margin-left: 0px;
-    }
-    .footer {
-        display: block;
-    }
+  .process-section{
+      display: block;
+      height: 100%;
+  }
+  .process-section .container {
+      width: 100%;
+      position: absolute;
+      display: block;
+  }
+  .process-section .container .card {
+      width: 80%;
+      margin-left: 0px;
+  }
+  .footer {
+      display: block;
+  }
 }
 .process-section .container .card:nth-child(1) {
-    background: url(../images/img1.jpg);
-    background: cover;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+  background: url(../images/img1.jpg);
+  background: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .process-section .container .card:nth-child(2) {
-    background: url(../images/img3.jpg);
-    background: cover;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+  background: url(../images/img3.jpg);
+  background: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .process-section .container .card:nth-child(3) {
-    background: url(../images/img4.jpg);
-    background: cover;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+  background: url(../images/img4.jpg);
+  background: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 
 .process-section .container .card .content {
-    padding: 20px;
-    text-align: center;
-    transition: 0.5s;
-    transform: translateY(100px);
-    opacity: 0;
-    min-height: 480px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s;
+  transform: translateY(100px);
+  opacity: 0;
+  min-height: 480px;
 
 }
 .process-section .container .card:hover{
-    background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.1);
 }
 .process-section .container .card:hover .content {
-    
-    transform: translateY(0px);
-    opacity: 1;
+  
+  transform: translateY(0px);
+  opacity: 1;
 
 }
 .process-section .container .card .content h1 {
@@ -267,452 +267,452 @@ pointer-events: none;
 }
 
 .process-section .container .card .content h2 {
-    margin-top: 16px;
-    font-size: 1.4em;
-    color: #fff;
-    z-index: 1;
+  margin-top: 16px;
+  font-size: 1.4em;
+  color: #fff;
+  z-index: 1;
 }
 .process-section .container .card .content h3{
-    font-size: 1.8em;
-    margin-top: 90px;
+  font-size: 1.8em;
+  margin-top: 90px;
 }
 .process-section .container .card .content p{
-    font-size: 1em;
-    color: #fff;
-    font-weight: 300;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
 }
 .process-section .container .card .content a{  
-    position: relative;
-    display: inline-block;
-    padding: 8px 20px;
-    margin-top: 15px;
-    background: #fff;
-    color: #000;
-    border-radius: 20px;
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
 }
 .section3 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(../images/bground.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/bground.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 100vh;
 }
 .section3 .mybox{
-    position: relative;
-    max-width: 600px !important;
-    padding: 50px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    overflow: hidden;
-    color: #fff;
+  position: relative;
+  max-width: 600px !important;
+  padding: 50px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  overflow: hidden;
+  color: #fff;
 }
 .section3 .mybox:before{
-    content: '';
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    bottom: -20px;
-    background: url(../images/bground.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    filter: blur(2px);
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: url(../images/bground.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  filter: blur(2px);
 }
 .section3 .mybox h2{
-    position: relative;
-    padding: 0;
-    margin: 0 0 20px;
-    font-size: 58px;
-    text-transform: uppercase;
-    z-index: 2;
-    
+  position: relative;
+  padding: 0;
+  margin: 0 0 20px;
+  font-size: 58px;
+  text-transform: uppercase;
+  z-index: 2;
+  
 }
 .section3 .mybox p{
-    position: relative;
-    padding: 0;
-    margin: 0;
-    font-size: 18px;
-    color: #fff;
-    z-index: 2;
-    
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+  z-index: 2;
+  
 }
 @media only screen and (max-width: 480px) {
-    .section3 {
-        display: block;
-        background-attachment: scroll;
-        height: auto;
-       
-    } 
-    .section3 .mybox{
-        
-        padding: 15px !important;
-        
-        
-    }
-    .section3 .mybox h2{
-        
-        font-size: 28px;
-        
-        
-    }
-    .section3 .mybox a{
-        font-size: 12px;
-    }
-    .section3 .mybox{
-    position: relative;
-    max-width: 600px !important;
-    padding: 50px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    overflow: hidden;
-    color: #000;
+  .section3 {
+      display: block;
+      background-attachment: scroll;
+      height: auto;
+     
+  } 
+  .section3 .mybox{
+      
+      padding: 15px !important;
+      
+      
+  }
+  .section3 .mybox h2{
+      
+      font-size: 28px;
+      
+      
+  }
+  .section3 .mybox a{
+      font-size: 12px;
+  }
+  .section3 .mybox{
+  position: relative;
+  max-width: 600px !important;
+  padding: 50px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  overflow: hidden;
+  color: #000;
 }
 }
 
 .mybanner .lappy{
-    position: absolute;
-    width: 150px;
-    top: 240px;
-    margin: 0;
-    padding: 0;
-    margin-left: 8%;
-    left: 76%;
-    /* transform: rotate(90deg); */
+  position: absolute;
+  width: 150px;
+  top: 240px;
+  margin: 0;
+  padding: 0;
+  margin-left: 8%;
+  left: 76%;
+  /* transform: rotate(90deg); */
 }
 
 .mouse{
-    position:absolute;
-   
-    width: 50px;
-    /* height: 60px; */
-    top: 320px;
-    margin-left: 15px;
-    left: 75%;
-    padding: 0;
-    /* right: -240px; */
-    /* transform: rotate(300deg) !important; */
+  position:absolute;
+ 
+  width: 50px;
+  /* height: 60px; */
+  top: 320px;
+  margin-left: 15px;
+  left: 75%;
+  padding: 0;
+  /* right: -240px; */
+  /* transform: rotate(300deg) !important; */
 }
 .clock{
-    position: absolute;
-    width: 50px;
-    /* height: 60px; */
-    top: 44%;
-    margin-left: 15px;
-    left: 37%;
-    padding: 0;
-    /* right: -240px; */
-    /* transform: rotate(360deg) */
+  position: absolute;
+  width: 50px;
+  /* height: 60px; */
+  top: 44%;
+  margin-left: 15px;
+  left: 37%;
+  padding: 0;
+  /* right: -240px; */
+  /* transform: rotate(360deg) */
 }
 .camera{
-    position: absolute;
-    width: 150px;
-    /* height: 60px; */
-    top: 78%;
-    margin-left: 20px;
-    left: 80%;
-    padding: 0;
-    margin-right: 0;
-    /* padding-left: 20px; */
+  position: absolute;
+  width: 150px;
+  /* height: 60px; */
+  top: 78%;
+  margin-left: 20px;
+  left: 80%;
+  padding: 0;
+  margin-right: 0;
+  /* padding-left: 20px; */
 
 }
 .mobile{
-    position: absolute;
-    width: 150px;
-    /* height: 60px; */
-    top: 78%;
-    margin-left: 15px;
-    left: 68%;
-    padding: 0;
+  position: absolute;
+  width: 150px;
+  /* height: 60px; */
+  top: 78%;
+  margin-left: 15px;
+  left: 68%;
+  padding: 0;
 }
 .pc {
-    position: absolute;
-    width: 14em;
-    margin-bottom: 50px;
-    left: 44%;
-    top: 26%;
-    /* transition: 25s; */
+  position: absolute;
+  width: 14em;
+  margin-bottom: 50px;
+  left: 44%;
+  top: 26%;
+  /* transition: 25s; */
 }
 .desk {
-    position: absolute;
-    width: 460px;
-    top: 0%;
-    margin-top: 25.5%;
-    left: 35%;
+  position: absolute;
+  width: 460px;
+  top: 0%;
+  margin-top: 25.5%;
+  left: 35%;
 }
 
 @media only screen and (max-width: 480px) {
-    .desk {
-        width: 150px;
-        top: 15%;
-    margin-top: 28.9%;
-    left: 30%;
-        
+  .desk {
+      width: 150px;
+      top: 15%;
+  margin-top: 28.9%;
+  left: 30%;
+      
 
-    }
-    .pc {
-        position: absolute;
-        width: 50px;
-        margin-bottom: 50px;
-        left: 44%;
-        top: 46%;
-        /* transition: 25s; */
-    }
-    .clock{
-        position: absolute;
-        width: 20px;
-        /* height: 60px; */
-        top: 52%;
-        margin-left: 15px;
-        left: 33%;
-        padding: 0;
-        /* right: -240px; */
-        /* transform: rotate(360deg) */
-    }
-    .mobile{
-        position: absolute;
-        width: 40px;
-        /* height: 60px; */
-        top: 80%;
-        margin-left: 15px;
-        left: 68%;
-        padding: 0;
-    }
-    .camera{
-        position: absolute;
-        width: 40px;
-        /* height: 60px; */
-        top: 80%;
-        margin-left: 20px;
-        left: 80%;
-        padding: 0;
-        margin-right: 0;
-        /* padding-left: 20px; */
-    
-    }
-    .mybanner .lappy{
-        position: absolute;
-        width: 60px;
-        top: 90px;
-        margin: 0;
-        padding: 0;
-        margin-left: 8%;
-        left: 76%;
-    }
-    .mouse{
-        position:absolute;
-       
-        width: 50px;
-        /* height: 60px; */
-        top: 90px;
-        margin-left: 15px;
-        left: 65%;
-        padding: 0;
-    }
-    
-
-}
-
-
-
-
-
-
-
-
-
-  @media only screen and (max-width: 480px) {
-  body {
-    width: 100%;
-    height: 100%;
-    background-size: 100% 100%;
+  }
+  .pc {
+      position: absolute;
+      width: 50px;
+      margin-bottom: 50px;
+      left: 44%;
+      top: 46%;
+      /* transition: 25s; */
+  }
+  .clock{
+      position: absolute;
+      width: 20px;
+      /* height: 60px; */
+      top: 52%;
+      margin-left: 15px;
+      left: 33%;
+      padding: 0;
+      /* right: -240px; */
+      /* transform: rotate(360deg) */
+  }
+  .mobile{
+      position: absolute;
+      width: 40px;
+      /* height: 60px; */
+      top: 80%;
+      margin-left: 15px;
+      left: 68%;
+      padding: 0;
+  }
+  .camera{
+      position: absolute;
+      width: 40px;
+      /* height: 60px; */
+      top: 80%;
+      margin-left: 20px;
+      left: 80%;
+      padding: 0;
+      margin-right: 0;
+      /* padding-left: 20px; */
+  
+  }
+  .mybanner .lappy{
+      position: absolute;
+      width: 60px;
+      top: 90px;
+      margin: 0;
+      padding: 0;
+      margin-left: 8%;
+      left: 76%;
+  }
+  .mouse{
+      position:absolute;
+     
+      width: 50px;
+      /* height: 60px; */
+      top: 90px;
+      margin-left: 15px;
+      left: 65%;
+      padding: 0;
   }
   
-  .wrapper{
-    
-    width: 48px!important;
-    height: 28px !important;
-    align-items: center!important;
-    
-    top: 51.5% !important;
-    left: 50% !important;
-    transform: translate(-50%,-50%);
-    
-  }
-  .wrapper h2{
-    font-size: 5px !important;
-    margin: 2px !important;
-    height: 5px !important;
-  }
-  html{
-    width: 100vw;
-  }
+
 }
-  .wrapper{
-    position: absolute;
-    width: 100%;
-    top: 35.7%;
-    left: 52.3%;
-    transform: translate(-50%,-50%);
-    width: 208px;
-    height: 114px;
-    background-color: none;
-    
-  }
-  .wrapper h2{
-    padding: 0;
-    margin: 3%;
-    color: #000;
-    background: none;
-    
-    /* text-shadow: 0 2px 0 blue; */
-    font-size: x-large;
-    position: relative;
-    display: inline block;
-    transition: 1s;
-    transform-origin: left;
-    transform: scaleX(1);
-    
-   
-  }
-  .wrapper h2 {
-    font-size: 1rem;
-    height: 20px;
-  }
-  .wrapper h2::before{
-    background: none;
-  }
-  span{
-    font-family: 'Baloo 2', cursive;
-   
-  }
-  .wrapper #line1 span:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* background: blue; */
-    transform-origin: right;
-    transform: 0.5s;
 
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+body {
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+.wrapper{
+  
+  width: 48px!important;
+  height: 28px !important;
+  align-items: center!important;
+  
+  top: 51.5% !important;
+  left: 50% !important;
+  transform: translate(-50%,-50%);
+  
+}
+.wrapper h2{
+  font-size: 5px !important;
+  margin: 2px !important;
+  height: 5px !important;
+}
+html{
+  width: 100vw;
+}
+}
+.wrapper{
+  position: absolute;
+  width: 100%;
+  top: 35.7%;
+  left: 52.3%;
+  transform: translate(-50%,-50%);
+  width: 208px;
+  height: 114px;
+  background-color: none;
+  
+}
+.wrapper h2{
+  padding: 0;
+  margin: 3%;
+  color: #000;
+  background: none;
+  
+  /* text-shadow: 0 2px 0 blue; */
+  font-size: x-large;
+  position: relative;
+  display: inline block;
+  transition: 1s;
+  transform-origin: left;
+  transform: scaleX(1);
+  
+ 
+}
+.wrapper h2 {
+  font-size: 1rem;
+  height: 20px;
+}
+.wrapper h2::before{
+  background: none;
+}
+span{
+  font-family: 'Baloo 2', cursive;
+ 
+}
+.wrapper #line1 span:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: blue; */
+  transform-origin: right;
+  transform: 0.5s;
+
+}
+.wrapper #line1 span:before {
+  content: '';
+  animation: animate infinite 8s;
+}
+@keyframes animate {
+  0%{
+    content: 'Top Notch';
   }
-  .wrapper #line1 span:before {
-    content: '';
-    animation: animate infinite 8s;
+  20%{
+    content: 'We Are';
   }
-  @keyframes animate {
-    0%{
-      content: 'Top Notch';
-    }
-    20%{
-      content: 'We Are';
-    }
-    40%{
-      content: 'We Create';
-    }
-    60%{
-      content: 'We Developes';
-    }
-    80%{
-      content: 'We Builds';
-    }
-    100%{
-      content: 'We Crafts.';
-    }
-    
+  40%{
+    content: 'We Create';
   }
-  .wrapper h3{
-    padding: 0;
-    margin: 0;
-    color: #fff;
-    
-    text-shadow: 0 2px 0 blue;
-    font-size: x-large;
-    position: relative;
-    display: inline block;
-    transition: 1s;
-    transform-origin: left;
-    transform: scaleX(1);
+  60%{
+    content: 'We Developes';
   }
+  80%{
+    content: 'We Builds';
+  }
+  100%{
+    content: 'We Crafts.';
+  }
+  
+}
+.wrapper h3{
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  
+  text-shadow: 0 2px 0 blue;
+  font-size: x-large;
+  position: relative;
+  display: inline block;
+  transition: 1s;
+  transform-origin: left;
+  transform: scaleX(1);
+}
 .wrapper #line2 span:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* background: blue; */
-    transform-origin: right;
-    transform: 0.5s;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: blue; */
+  transform-origin: right;
+  transform: 0.5s;
 
+}
+.wrapper #line2 span:before {
+  content: '';
+  animation: animate1 infinite 8s;
+}
+@keyframes animate1 {
+  0%{
+    content: 'Award Winning';
   }
-  .wrapper #line2 span:before {
-    content: '';
-    animation: animate1 infinite 8s;
+  20%{
+    content: 'Google Certified';
   }
-  @keyframes animate1 {
-    0%{
-      content: 'Award Winning';
-    }
-    20%{
-      content: 'Google Certified';
-    }
-    40%{
-      content: 'Stunning';
-    }
-    60%{
-      content: 'Scalable';
-    }
-    80%{
-      content: 'Robust';
-    }
-    100%{
-      content: 'Great.';
-    }
-    
+  40%{
+    content: 'Stunning';
   }
+  60%{
+    content: 'Scalable';
+  }
+  80%{
+    content: 'Robust';
+  }
+  100%{
+    content: 'Great.';
+  }
+  
+}
 
 .wrapper #line3 span:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* background: blue; */
-    transform-origin: right;
-    transform: 0.5s;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: blue; */
+  transform-origin: right;
+  transform: 0.5s;
 
+}
+.wrapper #line3 span:before {
+  content: '';
+  animation: animate2 infinite 8s;
+}
+@keyframes animate2 {
+  0%{
+    content: 'Affordable.';
   }
-  .wrapper #line3 span:before {
-    content: '';
-    animation: animate2 infinite 8s;
+  20%{
+    content: 'Partner.';
   }
-  @keyframes animate2 {
-    0%{
-      content: 'Affordable.';
-    }
-    20%{
-      content: 'Partner.';
-    }
-    40%{
-      content: 'Websites.';
-    }
-    60%{
-      content: 'Mobile Apps.';
-    }
-    80%{
-      content: 'Applications.';
-    }
-    100%{
-      content: 'User Experiance.';
-    }
-    
+  40%{
+    content: 'Websites.';
   }
-  .navbar-toggler{
+  60%{
+    content: 'Mobile Apps.';
+  }
+  80%{
+    content: 'Applications.';
+  }
+  100%{
+    content: 'User Experiance.';
+  }
+  
+}
+.navbar-toggler{
 position: absolute;
 top: 0%;
 right: 0%;
-  }
+}
 
-  /* .wrapper h2[data-scroll="in"]{
-    transform: scaleX(1);
+/* .wrapper h2[data-scroll="in"]{
+  transform: scaleX(1);
 
-  } */
+} */
