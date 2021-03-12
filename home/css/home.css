@@ -44,10 +44,11 @@
   .container .card {
       display: flex;
       width: 100% !important;
+      align-items: center;
+      justify-content: center;
       
       transition: 0.5s;
-      left: 20px;
-      right: 20px;
+      
   } 
   .container .card .mycard{
       left: 5px;
