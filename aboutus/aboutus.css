@@ -131,6 +131,10 @@ section.about .imgsec img{
     
 
 }
+.container .card .mycard{
+    left: 13px !important;
+}
+
 
 .menuicon.active .white{
     color: #fff;
@@ -160,6 +164,8 @@ section
 {
     flex-direction: column-reverse;
     justify-content: center;
+    width: 100%;
+    height: auto;
     
 
 }
@@ -171,6 +177,7 @@ section.about:before{
 section.about .content{
     padding:50px;
     margin-bottom: 30px;
+
    
 }
 section.about .content h2{
@@ -193,10 +200,16 @@ section.about .content .imgsec{
 }
 section.about .content .imgsec img{
     max-width: 300px;
+    
    
 }
 .white {
     color: #fff;
+}
+section.aboutsec2 .content,section.aboutsec3 .content{
+    
+    padding-left: 32px !important;
+
 }
 }
 section.aboutsec2{
@@ -210,6 +223,7 @@ section.aboutsec2{
     background:  #5DA3FA;
 
 }
+
 section.aboutsec2:before{
     content: '';
     position: absolute;
@@ -252,6 +266,9 @@ section.aboutsec2 .imgsec2 img{
     animation: fade-in 0.5s ease-in forwards;
     animation-delay: 2s;
     opacity: 0;
+    
+    margin-top: 30px;
+
 
 }
 section.aboutsec .content p,section.aboutsec3 .content p{
