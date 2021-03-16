@@ -221,6 +221,9 @@ body {
         top: 10%;
         left: 20%;
     }
+    header.sticky .mylogo, header.sticky nav ul li a, header.sticky nav ul .sub-menu a span {
+        color: #fff !important;
+    }
 }
 
 .form {

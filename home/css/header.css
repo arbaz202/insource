@@ -30,9 +30,13 @@ header.sticky {
     top:0;
 }
 header.sticky .mylogo,
- header.sticky nav ul li a,header.sticky nav ul .sub-menu a span
+ header.sticky nav ul li a
   {
         color: #000 !important;
+}
+header.sticky nav ul .sub-menu a span
+  {
+        color: #000 ;
 }
 header.sticky nav ul  li ul li a,header.sticky nav ul .sub-menu a{
     
@@ -82,6 +86,11 @@ header .mylogo {
     {
         left: 0 !important;
         transition: 0.6s;
+        margin-top: 48px !important;
+    }
+    header nav.active span
+    {
+        color: #fff;
     }
     header nav ul {
         display: block;
@@ -126,9 +135,9 @@ background: #2196f3;
         width: 100%;
     }
     header nav ul li.sub-menu:before,header nav ul li.active.sub-menu:before{
-        right: 145px !important;
+        right: 130px !important;
     top: 12px;
-color: #fff;
+color: #fff !important;
     }
     header.sticky nav ul li a,header.sticky nav ul .sub-menu a,header.sticky .toggler-btn
   {

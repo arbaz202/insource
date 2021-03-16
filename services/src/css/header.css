@@ -125,7 +125,7 @@ background: #2196f3;
         width: 100%;
     }
     header nav ul li.sub-menu:before,header nav ul li.active.sub-menu:before{
-        right: 145px !important;
+        right: 105px !important;
     top: 12px;
 color: #fff;
     }
