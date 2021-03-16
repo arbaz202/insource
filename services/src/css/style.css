@@ -541,7 +541,7 @@ transform: rotateZ(-2deg);
     width: 200px !important;
   }
   .pan{
-    height: 400px !important;
+    /* height: 400px !important; */
     top:0;
   }
   .pan p{
