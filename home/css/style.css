@@ -41,6 +41,7 @@ footer{
 	float: left;
   line-height: 100px;
   align-items: center;
+ 
   
 }
 .logo a {
@@ -272,6 +273,11 @@ nav {
       header{
           width: 100vw!important;
           height: 300px;
+      }
+      .logo {
+  
+        margin-left: 138px;
+        
       }
     body {
       width: 100%;

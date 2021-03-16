@@ -419,9 +419,9 @@ body {
     }
 
     .mycard {
-        width: 90vw !important;
-        margin-left: 25px !important;
-        margin-right: 25px !important;
+        width: 80vw !important;
+        /* margin-left: 25px !important;
+        margin-right: 25px !important; */
         padding: 0px;
         height: auto !important;
         /* width: 95vw; */
