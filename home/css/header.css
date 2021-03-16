@@ -135,8 +135,14 @@ color: #fff;
 color: #fff !important;
 }
 header.sticky .toggler-btn {
-    color: #000;
+    color: #000 !important;
     margin-left: 20px;
+}
+header .mylogo {
+    left: 70px;
+}
+header.sticky .mylogo {
+    left: -50px;
 }
 }
 header ul 
