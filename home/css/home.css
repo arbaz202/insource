@@ -746,3 +746,9 @@ right: 0%;
   width: 100px;
   margin-left: 60px;
 }
+@media only screen and (max-width: 480px){
+  .callus img{
+    width: 80px;
+    
+  }
+}
