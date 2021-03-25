@@ -739,6 +739,8 @@ right: 0%;
   right: 0;
   overflow: hidden;
   z-index: 1;
+    margin-bottom: 10px;
+  margin-right: 10px;
 }
 .callus img{
   width: 100px;
