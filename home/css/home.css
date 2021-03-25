@@ -340,7 +340,7 @@ pointer-events: none;
   margin: 0 0 20px;
   font-size: 58px;
   text-transform: uppercase;
-  z-index: 2;
+  /* z-index: 2; */
   
 }
 .section3 .mybox p{
@@ -732,3 +732,15 @@ right: 0%;
   transform: scaleX(1);
 
 } */
+.callus{
+ 
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+.callus img{
+  width: 120px;
+  margin-left: 60px;
+}

@@ -86,7 +86,7 @@ header .mylogo {
     {
         left: 0 !important;
         transition: 0.6s;
-        margin-top: 48px !important;
+        margin-top: 10px !important;
     }
     header nav.active span
     {
